@@ -1,0 +1,31 @@
+{
+  "name": "mole-starlight/pdf-fpdi",
+  "description": "PDF generate from template.",
+  "type": "library",
+  "keywords": ["PDF", "FPDI"],
+  "license": "MIT",
+  "support": {
+    "issues": "https://github.com/mole-starlight/pdf-fpdi/issues",
+    "source": "https://github.com/mole-starlight/pdf-fpdi"
+  },
+  "authors": [
+    {
+      "name": "Jin Chen",
+      "email": "jin.chen@shareworks.cn"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0",
+    "setasign/fpdi-fpdf": "1.6.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "BD\\pdf\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}

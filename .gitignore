@@ -1,0 +1,5 @@
+vendor
+.idea
+pdfEngine
+.DS_Store
+composer.lock
