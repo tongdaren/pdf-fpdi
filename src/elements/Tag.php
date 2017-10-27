@@ -63,7 +63,16 @@ class Tag implements Render
      */
     public function render()
     {
+        $old = null;
+        if (isset($this->value['fontSize'])) {
+            $old = $this->context->pdf->setFontSize($this->value['fontSize']);
+        }
+
         $this->context->pdf->setCurrentPagePoint($this->area->x, $this->area->y);
         $this->context->pdf->cell($this->area->w, $this->area->h, $this->data);
+
+        if ($old) {
+            $this->context->pdf->setFontSize($old);
+        }
     }
 }

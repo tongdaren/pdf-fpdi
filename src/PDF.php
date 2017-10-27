@@ -211,10 +211,13 @@ class PDF extends \FPDI
 
     /**
      * @param $size
+     * @return int
      */
     public function setFontSize($size)
     {
+        $old = $this->FontSizePt;
         parent::SetFontSize($size);
+        return $old;
     }
 
     /**
